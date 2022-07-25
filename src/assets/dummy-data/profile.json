@@ -1,0 +1,61 @@
+[
+    {
+      "name": "Harman",
+      "email": "harman.arora@accolitedigital.com",
+      "userRole": { "userId": 5, "role": "Interviewer" },
+      "gender": "Male",
+      "location": "Bangalore",
+      "contactNo": "7019375043",
+      "exp": 2
+    },
+    {
+      "name": "Diksha",
+      "role": "Panelist",
+      "location": "Bengaluru, Karnataka, India, (APAC)",
+      "empId": "INT950",
+      "contact_no": "9090909090",
+      "experience": "00 Y 02 M 11 D",
+      "email": "abcd@example.com",
+      "gender": "Male",
+      "round": "R1",
+      "total_interviews_taken": "44",
+      "total_candidates_selected": "35"
+    },
+    {
+      "name": "Harsh",
+      "email": "harsh.arora@accolitedigital.com",
+      "userRole": { "userId": 1, "role": "recruiter" },
+      "gender": "Male",
+      "location": "Bangalore",
+      "contactNo": "7014375043",
+      "exp": 1
+    },
+    {
+      "name": "himanshu arora",
+      "email": "himanshu.arora@accolitedigital.com",
+      "userRole": { "userId": 4, "role": "interviewer" },
+      "gender": "Male",
+      "location": "Bangalore",
+      "contactNo": "6290034255",
+      "exp": 2
+    },
+    {
+      "name": "Sumit",
+      "email": "sumit.paul@accolitedigital.com",
+      "userRole": { "userId": 2, "role": "recruiter" },
+      "gender": "Male",
+      "location": "Bangalore",
+      "contactNo": "7278910170",
+      "exp": 2
+    },
+    {
+      "name": "unnati jain",
+      "email": "unnati.jain@accolitedigital.com",
+      "userRole": { "userId": 3, "role": "interviewer" },
+      "gender": "Female",
+      "location": "Bangalore",
+      "contactNo": "6290034289",
+      "exp": 2
+    }
+  ]
+

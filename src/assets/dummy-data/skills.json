@@ -1,0 +1,10 @@
+[
+  {
+    "userRole": {
+      "userId": 3,
+      "role": "Recruiter"
+    },
+    "skill": "scala",
+    "round": 2
+  }
+]

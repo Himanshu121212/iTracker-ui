@@ -1,0 +1,71 @@
+<div class="container">
+  <h1>{{ month_names[header[0]] }}, {{ header[1] }}</h1>
+  <div class="grid-calendar">
+    <div class="row calendar-week-header">
+      <div class="col-xs-1 grid-cell_header">
+        <div>
+          <div><span>SUNDAY</span></div>
+        </div>
+      </div>
+      <div class="col-xs-1 grid-cell_header">
+        <div>
+          <div><span>MONDAY</span></div>
+        </div>
+      </div>
+      <div class="col-xs-1 grid-cell_header">
+        <div>
+          <div><span>TUESDAY</span></div>
+        </div>
+      </div>
+      <div class="col-xs-1 grid-cell_header">
+        <div>
+          <div><span>WEDNESDAY</span></div>
+        </div>
+      </div>
+      <div class="col-xs-1 grid-cell_header">
+        <div>
+          <div><span>THURSDAY</span></div>
+        </div>
+      </div>
+      <div class="col-xs-1 grid-cell_header">
+        <div>
+          <div><span>FRIDAY</span></div>
+        </div>
+      </div>
+      <div class="col-xs-1 grid-cell_header">
+        <div>
+          <div><span>SATURDAY</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div *ngFor="let month_date of counter(28)">
+      <div class="row calendar-week"></div>
+      <div class="col-xs-1 grid-cell">
+        <div>
+          <div class="change" style="margin-top: -47px">
+            <div *ngFor="let number of datesfromjson; index as i">
+              <div *ngIf="month_date.t == number">
+                <div class="event_container_calendar">
+                  <button
+                    class="btn-color"
+                    (click)="
+                      slot_times.splice(i, 1) &&
+                        datesfromjson.splice(i, 1)                        
+                    "
+                  ><div >X</div>
+                </button>
+
+                  <div class="event_container">{{ slot_times[i] }}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <span>{{ month_date.t }} </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

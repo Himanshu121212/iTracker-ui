@@ -1,0 +1,52 @@
+<!-- <mat-toolbar color="primary" class="app-header" >
+  <div >
+    <a mat-flat-button href="https://www.accolite.com/" color="primary"
+      >Accolite iTracker</a
+    >
+  </div>
+
+  <span class="nav-tool-items"> </span>
+</mat-toolbar>
+
+     -->
+
+     
+
+<mat-toolbar color="primary" class="app-header">
+  <div>
+    <a mat-flat-button href="https://www.accolite.com/" color="primary"
+      >Accolite iTracker</a
+    >
+  </div>
+
+  <span class="nav-tool-menu">
+    <button mat-fab color="primary"  [matMenuTriggerFor]="menu">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button routerLink="profile" routerLinkActive="active" mat-menu-item>
+        View Profile
+      </button>
+      <button routerLink="panelist" routerLinkActive="active" mat-menu-item>
+        Panelist Dashboard
+      </button>
+      <button routerLink="view-slots" routerLinkActive="active" mat-menu-item>
+        View Slots(PanelistView)
+      </button>
+      <button routerLink="add-slots" routerLinkActive="active" mat-menu-item>
+        Add Slots(PanelistView)
+      </button>
+      <button routerLink="recruiter" routerLinkActive="active" mat-menu-item>
+        Recruiter View
+      </button>
+      <button routerLink="login" routerLinkActive="active" mat-menu-item>
+        Sign out
+      </button>
+    </mat-menu>
+    
+  </span>
+</mat-toolbar>
+
+<div class="login-wrapper" fxLayout="column" fxLayoutAlign="none stretch">
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,46 @@
+.google-login-btn {
+  //background-image: url('src/assets/google-login.png');
+  background-repeat: no-repeat;
+  background-size: 0%;
+  background-position: 100%;
+  
+}
+.home-page {
+ // background-image: url('src/assets/login_page_template.png');
+  
+}
+.login_block {
+ display: inline-block;
+ font-weight:bold;
+ padding-left: 10%;
+ padding-top: 70%;
+ padding-right:20%;
+ }
+mat-card {
+  margin: 10%;
+  //width:80%;
+  height: 120px;
+  width: 250px;
+}
+.flex-me {
+  display: inline-flex;
+  flex-flow: row wrap;
+  background: grey;
+}
+
+
+.mat-icon-rtl-mirror{
+ // background-image: url('src/assets/Accolite_Logo_Grey.jpg');
+  background-size: 100%;
+  background-position: 100%;
+  width:100;
+
+}
+.center {
+  background-image: url("https://pngtree.com/so/multilayer'>multilayer png from pngtree.com");
+  display: flex;
+  opacity: 0.75;
+  justify-content: center;
+}
+
+

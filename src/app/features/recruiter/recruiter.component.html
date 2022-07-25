@@ -1,0 +1,72 @@
+<html>
+<head>
+    <title>Recruiter View</title>
+</head>
+<body>
+    
+    <section>
+        <form class="filters">
+            <div>
+            <label for="from"><strong>From:&nbsp;</strong> </label>
+            <input type="date" id="from" name="from">
+            </div>
+            <div>
+                <label for="to"><strong>To:</strong>&nbsp;</label>
+                <input type="date" id="to" name="to">
+            </div>
+            <div>
+                <label for="skills"><strong>Skills:</strong>&nbsp;</label>
+                <datalist id="suggestion">
+                    <option>Angular</option>
+                    <option>Agile</option>
+                    <option>Java</option>
+                    <option>React</option>
+                    <option>Javascript</option>
+                    <option>C</option>
+                    <option>SQL</option>
+                    <option>C++</option>
+                </datalist>
+                <input autoComplete="on" list="suggestion"/> 
+            </div>
+            <div>
+                <label for="name"><strong>Panel Name:</strong>&nbsp;</label>
+                <datalist id="suggestions">
+                    <option>Chandler Bing</option>
+                    <option>Joey Tribbiani</option>
+                    <option>Monica Geller</option>
+                    <option>Phoebe Buffay</option>
+                    <option>Rachel Green</option>
+                    <option>Ross Geller</option>
+                </datalist>
+                <input  autoComplete="on" list="suggestions"/> 
+            </div>
+            <input type="submit" placeholder="Submit">
+        </form>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-2"></div>
+                <div class="col-sm-12 col-md-8">
+                    <ag-grid-angular
+                            style="width:100%;"
+                            class="ag-theme-alpine"
+                            [rowData]="rowData"
+                            [columnDefs]="columnDefs"
+                            [columnTypes]="columnTypes"
+                            [suppressExcelExport]="true"
+                            [popupParent]="popupParent"
+                            (gridReady)="onGridReady($event)"
+                            domLayout='autoHeight'
+                        >
+                    </ag-grid-angular>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <footer>
+        <button (click)="onBtnExport()" class="btn"><i class="fa fa-download fa-lg" aria-hidden="true"></i></button>
+    </footer>
+</body>
+</html>
+  

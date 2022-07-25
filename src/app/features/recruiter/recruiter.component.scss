@@ -1,0 +1,71 @@
+header {
+  background-color: royalblue;
+  padding: 10px;
+  text-align: right;
+  font-size: 25px;
+  color: white;
+}
+.btn {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.btn:hover {
+  color: white;
+  background-color: rgb(112, 4, 4);
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+form {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.filters {
+  background-color: rgb(206, 214, 238);
+  padding: 10px;
+  text-align: right;
+  color: black;
+}
+
+footer {
+  //background-color: royalblue;
+  padding: 10px;
+  text-align: right;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+nav {
+  float: left;
+  height: 550px;;
+  background: rgb(238, 170, 170);
+  padding: 20px;
+}
+.x {
+  color: black;
+  font-size: large;
+}
+
+.ag-theme-alpine {
+  --ag-odd-row-background-color: #7e90f1;
+  --ag-header-background-color:#7e90f1;
+  --ag-even-row-background-color: rgb(238, 116, 116);
+  --ag-background-color: rgb(236, 228, 236);
+  --ag-font-size: 100;
+  border: 1px solid royalblue;
+}
+
+

@@ -1,0 +1,8 @@
+<div *ngIf="socialAuthService.authState | async as socialUser">
+  <div><img src="{{ socialUser.photoUrl }}"></div>
+  <p>Hello, {{socialUser.name}}!</p>
+  <br>
+  <p>Your email: {{socialUser.email}}</p>
+  <br>
+  <button mat-raised-button (click)="logout()">Logout</button>
+</div>

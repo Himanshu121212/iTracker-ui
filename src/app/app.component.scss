@@ -1,0 +1,33 @@
+.login-wrapper{
+    justify-content: right;
+}
+body {
+    display: block;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+  @mixin md-icon-size($size: 100px) {
+    font-size: $size;
+    height: $size;
+    width: $size;
+    line-height: $size;
+    display: flex;
+    justify: end;
+    justify-content: space-between;
+  }
+  
+
+  a:hover {
+    color: white;
+  }
+  a:visited {
+    color: white;
+  }
+  .app-header {
+    display: flex;
+    justify-content: space-between;
+    // margin: 0;
+  }
+  
