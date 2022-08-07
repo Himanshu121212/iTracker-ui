@@ -10,7 +10,7 @@ export class AddslotsService {
 
   
   
-  slotsUrl = "Interview-api-link";
+  slotsUrl = "http://localhost:8080/User/Interview/create";
 
   saveUser(user:any): Observable<any>{
     

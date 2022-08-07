@@ -17,16 +17,16 @@ export class RecruiterService {
   */
   getSlots()
   {
-    return this.http.get<any[]>( "booked-api-link");
+    return this.http.get<any[]>( "http://localhost:8080/User/Interview/booked?i_id=2");
   }
 
   getInfo()
   {
-    return this.http.get<any>( "users-api-link");
+    return this.http.get<any>( "http://localhost:8080/user/2");
   }
 
   getSkills()
   {
-    return this.http.get<any[]>("skils-api-link")
+    return this.http.get<any[]>(" http://localhost:8080/skills?id=2")
   }
 }

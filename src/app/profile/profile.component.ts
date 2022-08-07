@@ -42,7 +42,7 @@ export class ProfileComponent implements OnInit {
     });
 
     this._profileServive
-      .getSkillInfo(2)
+      .getSkillInfo(7)
       .subscribe((response: ISkill[]) => (this.skills = response));
 
     this._profileServive

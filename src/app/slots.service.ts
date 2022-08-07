@@ -8,12 +8,12 @@ import { Observable } from 'rxjs';
 })
 export class SlotsService {
 
-//  private _url="http://ec2-3-111-33-68.ap-south-1.compute.amazonaws.com:8080/User/Interview/all?i_id=6";
+  private _url="http://localhost:8080/User/Interview/all?i_id=6";
   
   private _url2="/assets/dummy-data/slot_dates.json";
 
 
-  private _url3="Interview-api-link";
+  private _url3="http://localhost:8080/User/Interview/all?i_id=35";
   constructor(private http:HttpClient) {
   }
 

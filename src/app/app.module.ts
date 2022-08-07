@@ -89,7 +89,11 @@ import { DatePipe } from '@angular/common';
           {
             id: GoogleLoginProvider.PROVIDER_ID,
             provider: new GoogleLoginProvider(
-              "408208327082-571vttplk0c4fq06n7i6023kikjj65p5.apps.googleusercontent.com"
+              "624796833023-clhjgupm0pu6vgga7k5i5bsfp6qp6egh.apps.googleusercontent.com"
+              //"371812799929-7cd6obuqtj967fu43ofar39nh3hkqbld.apps.googleusercontent.com"
+              //"371812799929-7cd6obuqtj967fu43ofar39nh3hkqbld.apps.googleusercontent.com"       
+              //"371812799929-3ggu4epssmh4er8g4brama16icj5860h.apps.googleusercontent.com"
+//"408208327082-571vttplk0c4fq06n7i6023kikjj65p5.apps.googleusercontent.com"
             ),
           },
         ],
